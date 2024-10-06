@@ -96,11 +96,11 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/06/2024 17:52:26",
+  "HeaderLastSavedDateTimeUTC": "10/06/2024 18:17:16",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
-    "2c9dff73-95b0-47c7-a392-2da1d12a2c72": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/d6bd8c644706448c863e791f0d11e355-20399e081bc4a247\"",
-    "5b37eec2-755f-45ed-bf92-67240a55c5b2": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/shared-office365-2a20fabd-0366-40b8-a1e2-2fd5bc4f2b8e\"",
+    "2c9dff73-95b0-47c7-a392-2da1d12a2c72": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/9b0bdf6709934f30ad7db18a6db77d3f\"",
+    "5b37eec2-755f-45ed-bf92-67240a55c5b2": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/85f63d1b3d3b4000b49e94d7bb747a7a\"",
     "b4f6d55a-f37f-4e95-bf4e-3c71d38e1f91": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/ec14986a80854077bd0e36fbdd1ebb53\""
   },
   "LocalDatabaseReferencesAsEmpty": true,
@@ -115,14 +115,14 @@
     "Wire Frame XYZ - Marco 2": "7f6fc776-2784-45d1-8438-98a904c97b44.jpg"
   },
   "LocalResourceRootPaths": {
-    "logo@3x": "https://docserverpwaprodwus.blob.core.windows.net/ec758dd0-0416-4689-83db-fdd178356e26-1/resource/Assets0Images0logo%25403x.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-10-06T17%3A46%3A52Z&ske=2024-10-07T18%3A01%3A52Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-10-07T18%3A01%3A52Z&sr=b&sp=r&sig=Y1vrSzUN1PtPXJIdzYtaZU0VUpLWzowvbua7N4E6XmY%3D",
-    "menu_96px": "https://docserverpwaprodwus.blob.core.windows.net/ec758dd0-0416-4689-83db-fdd178356e26-1/resource/Assets0Images0menu_96px.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-10-06T17%3A46%3A52Z&ske=2024-10-07T18%3A01%3A52Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-10-07T18%3A01%3A52Z&sr=b&sp=r&sig=U7DZl%2FbipupP1HD%2BkPNHyFKHBN0K9T%2FPBV9uJtQQQMY%3D",
-    "menu_96px_2": "https://docserverpwaprodwus.blob.core.windows.net/ec758dd0-0416-4689-83db-fdd178356e26-1/resource/Assets0Images0menu_96px_2.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-10-06T17%3A46%3A52Z&ske=2024-10-07T18%3A01%3A52Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-10-07T18%3A01%3A52Z&sr=b&sp=r&sig=KUBqPG7RAdxdnyXdknA6jfULJRPg3jy8rctFQWvOHH0%3D",
-    "Property Image": "https://docserverpwaprodwus.blob.core.windows.net/ec758dd0-0416-4689-83db-fdd178356e26-1/resource/Assets0Images0Property%2BImage.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-10-06T17%3A46%3A52Z&ske=2024-10-07T18%3A01%3A52Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-10-07T18%3A01%3A52Z&sr=b&sp=r&sig=fhr1c1IxuTD0Ug3jl3KKB2i1zAax6wpfmQDlyeHTzgI%3D",
-    "thumbnail@3x": "https://docserverpwaprodwus.blob.core.windows.net/ec758dd0-0416-4689-83db-fdd178356e26-1/resource/Assets0Images0thumbnail%25403x.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-10-06T17%3A46%3A52Z&ske=2024-10-07T18%3A01%3A52Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-10-07T18%3A01%3A52Z&sr=b&sp=r&sig=EsBgGy%2FfitfUnTjfZUayf76np3GX4U23EddwZrBI%2B5Q%3D",
-    "tumbnailSelected@3x": "https://docserverpwaprodwus.blob.core.windows.net/ec758dd0-0416-4689-83db-fdd178356e26-1/resource/Assets0Images0tumbnailSelected%25403x.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-10-06T17%3A46%3A52Z&ske=2024-10-07T18%3A01%3A52Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-10-07T18%3A01%3A52Z&sr=b&sp=r&sig=POzxtT3qoZqUK69IQHghADWP3ThIB90SlP8YpnhrReg%3D",
-    "Wire Frame XYZ": "https://docserverpwaprodwus.blob.core.windows.net/ec758dd0-0416-4689-83db-fdd178356e26-1/resource/Assets0Images0876aedf7-7a7a-4db7-a155-737dd176584e.jpg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-10-06T17%3A46%3A52Z&ske=2024-10-07T18%3A01%3A52Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-10-07T18%3A01%3A52Z&sr=b&sp=r&sig=VtghKLma7tRCtxoHQtwf%2Bt73%2BOZPlkBPoPYKxtG%2FB0g%3D",
-    "Wire Frame XYZ - Marco 2": "https://docserverpwaprodwus.blob.core.windows.net/ec758dd0-0416-4689-83db-fdd178356e26-1/resource/Assets0Images07f6fc776-2784-45d1-8438-98a904c97b44.jpg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-10-06T17%3A46%3A52Z&ske=2024-10-07T18%3A01%3A52Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-10-07T18%3A01%3A52Z&sr=b&sp=r&sig=%2FOhBFWc%2BgaTLbKfkyhX6Vy2D8E%2F8HjHMQ4Fv7UxEfk4%3D"
+    "logo@3x": "https://docserverpwaprodeus.blob.core.windows.net/4366d8d9-5703-449a-b6e3-329ef6f7c0e9-1/resource/Assets0Images0logo%25403x.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-10-06T18%3A16%3A38Z&ske=2024-10-07T18%3A31%3A38Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-10-07T18%3A31%3A38Z&sr=b&sp=r&sig=h2fOlRSlyqW8HHZ66ws3McZYVHnAhKqdrMRvvvPK3Zc%3D",
+    "menu_96px": "https://docserverpwaprodeus.blob.core.windows.net/4366d8d9-5703-449a-b6e3-329ef6f7c0e9-1/resource/Assets0Images0menu_96px.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-10-06T18%3A16%3A38Z&ske=2024-10-07T18%3A31%3A38Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-10-07T18%3A31%3A38Z&sr=b&sp=r&sig=RzqcnoKyxAFLOnRtqGSFvaZF2EUAKTxUbD5CX%2F69YGk%3D",
+    "menu_96px_2": "https://docserverpwaprodeus.blob.core.windows.net/4366d8d9-5703-449a-b6e3-329ef6f7c0e9-1/resource/Assets0Images0menu_96px_2.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-10-06T18%3A16%3A38Z&ske=2024-10-07T18%3A31%3A38Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-10-07T18%3A31%3A38Z&sr=b&sp=r&sig=uVqcTM4BscaQfHtRGn5wY3uxzczvgsa%2FxwvGWPFsNCA%3D",
+    "Property Image": "https://docserverpwaprodeus.blob.core.windows.net/4366d8d9-5703-449a-b6e3-329ef6f7c0e9-1/resource/Assets0Images0Property%2BImage.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-10-06T18%3A16%3A38Z&ske=2024-10-07T18%3A31%3A38Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-10-07T18%3A31%3A38Z&sr=b&sp=r&sig=72NihLK2ArL2lO1CQsW7YIOGyFYmFFxlPvLnlg4VPFM%3D",
+    "thumbnail@3x": "https://docserverpwaprodeus.blob.core.windows.net/4366d8d9-5703-449a-b6e3-329ef6f7c0e9-1/resource/Assets0Images0thumbnail%25403x.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-10-06T18%3A16%3A38Z&ske=2024-10-07T18%3A31%3A38Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-10-07T18%3A31%3A38Z&sr=b&sp=r&sig=IG9PuhKJRANX3fRBKiHtby1R1gIIrjSmmvmgWJL5pq8%3D",
+    "tumbnailSelected@3x": "https://docserverpwaprodeus.blob.core.windows.net/4366d8d9-5703-449a-b6e3-329ef6f7c0e9-1/resource/Assets0Images0tumbnailSelected%25403x.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-10-06T18%3A16%3A38Z&ske=2024-10-07T18%3A31%3A38Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-10-07T18%3A31%3A38Z&sr=b&sp=r&sig=cn4zDZ3n1zlabXBu7PsFPp6X%2BXeppBVO%2FOVGSyx9ogk%3D",
+    "Wire Frame XYZ": "https://docserverpwaprodeus.blob.core.windows.net/4366d8d9-5703-449a-b6e3-329ef6f7c0e9-1/resource/Assets0Images0876aedf7-7a7a-4db7-a155-737dd176584e.jpg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-10-06T18%3A16%3A38Z&ske=2024-10-07T18%3A31%3A38Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-10-07T18%3A31%3A38Z&sr=b&sp=r&sig=3UT69zNo%2FNeI5a7XO7EfJNH%2BaeSYfeZpDX2549wCDxA%3D",
+    "Wire Frame XYZ - Marco 2": "https://docserverpwaprodeus.blob.core.windows.net/4366d8d9-5703-449a-b6e3-329ef6f7c0e9-1/resource/Assets0Images07f6fc776-2784-45d1-8438-98a904c97b44.jpg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-10-06T18%3A16%3A38Z&ske=2024-10-07T18%3A31%3A38Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-10-07T18%3A31%3A38Z&sr=b&sp=r&sig=N07Dae6Vd16S89rQ0vFM5Q2UFl%2BGe6FYkeYZ4nDCNDk%3D"
   },
   "OldLogoFileName": "4swrqzd4.jpg",
   "OrderComponentMetadata": {},
@@ -1031,7 +1031,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.4067234,
+    "AnalysisLoadTime": 0.4004106,
     "ControlCount": {
       "addMedia": 1,
       "form": 2,
@@ -1050,7 +1050,7 @@
       "screen": 4,
       "typedDataCard": 8
     },
-    "DeserializationLoadTime": 1.6631788
+    "DeserializationLoadTime": 6.331812
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

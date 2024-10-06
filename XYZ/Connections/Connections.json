@@ -1,0 +1,107 @@
+{
+  "2c9dff73-95b0-47c7-a392-2da1d12a2c72": {
+    "appActions": [
+      "Run"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Flujos lógicos",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1697/1.0.1697.3784/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "5b37eec2-755f-45ed-bf92-67240a55c5b2": {
+          "value": "shared_office365"
+        },
+        "b4f6d55a-f37f-4e95-bf4e-3c71d38e1f91": {
+          "value": "shared_sharepointonline"
+        },
+        "workflowDisplayName": {
+          "value": "ML_EnviarCorreoElectronico"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "d6bd8c64-4706-448c-863e-791f0d11e355"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_office365": {
+          "value": "5b37eec2-755f-45ed-bf92-67240a55c5b2"
+        },
+        "shared_sharepointonline": {
+          "value": "b4f6d55a-f37f-4e95-bf4e-3c71d38e1f91"
+        },
+        "workflowDisplayName": {
+          "value": "ML_EnviarCorreoElectronico"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "d6bd8c64-4706-448c-863e-791f0d11e355"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "ML_EnviarCorreoElectronico"
+    ],
+    "dependencies": {
+      "shared_office365": "5b37eec2-755f-45ed-bf92-67240a55c5b2",
+      "shared_sharepointonline": "b4f6d55a-f37f-4e95-bf4e-3c71d38e1f91"
+    },
+    "dependents": [],
+    "id": "2c9dff73-95b0-47c7-a392-2da1d12a2c72"
+  },
+  "5b37eec2-755f-45ed-bf92-67240a55c5b2": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office\u00A0365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1706/1.0.1706.3851/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "2c9dff73-95b0-47c7-a392-2da1d12a2c72"
+    ],
+    "id": "5b37eec2-755f-45ed-bf92-67240a55c5b2"
+  },
+  "b4f6d55a-f37f-4e95-bf4e-3c71d38e1f91": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write",
+      "providers/PowerPlatform.Governance/Operations/Delete"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/jayawan/releases/v1.0.1697/1.0.1697.3786/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://laiberocol.sharepoint.com/sites/Pruebas_ING_2024": {
+        "dataSources": {
+          "InventarioXYZ": {
+            "tableName": "5b412ae1-097f-41bc-a698-3b71ddef4d06"
+          },
+          "usuarios": {
+            "tableName": "7982d79b-4936-48ab-98fb-eeffaa3cc355"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "InventarioXYZ",
+      "usuarios"
+    ],
+    "dependencies": {},
+    "dependents": [
+      "2c9dff73-95b0-47c7-a392-2da1d12a2c72"
+    ],
+    "id": "b4f6d55a-f37f-4e95-bf4e-3c71d38e1f91"
+  }
+}

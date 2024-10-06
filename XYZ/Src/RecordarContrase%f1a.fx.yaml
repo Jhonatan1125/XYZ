@@ -1,0 +1,90 @@
+RecordarContraseña As screen:
+    Fill: =Color.White
+    Height: =Max(App.Height, App.DesignHeight)
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+    Width: =Max(App.Width, App.DesignWidth)
+
+    Container1_2 As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =768
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =10
+        LayoutMode: =LayoutMode.Auto
+        PaddingLeft: =10
+        PaddingTop: =10
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =672
+        ZIndex: =1
+
+        ButtonCanvas3_1 As Botón:
+            Align: =Align.Justify
+            AlignInContainer: =AlignInContainer.Start
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Icon: ="ArrowLeft"
+            IconStyle: ='ButtonCanvas.IconStyle'.Filled
+            LayoutMinHeight: =32
+            LayoutMinWidth: =96
+            OnSelect: =Navigate(Login,ScreenTransition.CoverRight)
+            Text: ="Volver"
+            Width: =96
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        Image6_2 As image:
+            BorderColor: =App.Theme.Colors.Darker40
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =116
+            Image: ='Wire Frame XYZ - Marco 2'
+            Width: =328.16
+            X: =198
+            Y: =99
+            ZIndex: =2
+
+        "TextInputCanvas1_1 As 'Entrada de texto'":
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =2
+            DisplayMode: =DisplayMode.Edit
+            Font: =Font.'Open Sans'
+            FontSize: =17
+            Height: =50
+            LayoutMinHeight: =32
+            LayoutMinWidth: =320
+            Placeholder: ="Correo Electronico"
+            Width: =320
+            X: =0
+            Y: =0
+            ZIndex: =3
+
+        ButtonCanvas4_1 As Botón:
+            DisplayMode: =DisplayMode.Edit
+            Height: =40
+            Icon: ="Send"
+            IconStyle: ='ButtonCanvas.IconStyle'.Filled
+            LayoutMinHeight: =32
+            LayoutMinWidth: =96
+            OnSelect: =ML_EnviarCorreoElectronico.Run(TextInputCanvas1_1.Value);Notify("En unos minutos recibira un correo informando su contraseña",NotificationType.Information,5000);Navigate(Login,ScreenTransition.CoverRight)
+            Text: ="Recordar Contraseña"
+            Width: =320
+            X: =0
+            Y: =0
+            ZIndex: =4
+
+    Image5_2 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =768
+        Image: ='Wire Frame XYZ'
+        ImagePosition: =ImagePosition.Fill
+        Width: =692
+        X: =674
+        ZIndex: =2
+

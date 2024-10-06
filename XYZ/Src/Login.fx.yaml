@@ -1,0 +1,174 @@
+Login As screen:
+    Fill: =Color.White
+    Height: =Max(App.Height, App.DesignHeight)
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+    Width: =Max(App.Width, App.DesignWidth)
+
+    Image5 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =768
+        Image: ='Wire Frame XYZ'
+        ImagePosition: =ImagePosition.Fill
+        Width: =692
+        X: =674
+        ZIndex: =1
+
+    Container1 As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =768
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =10
+        LayoutJustifyContent: =LayoutJustifyContent.Center
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =672
+        ZIndex: =3
+
+        Image6 As image:
+            BorderColor: =App.Theme.Colors.Darker40
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =116
+            Image: ='Wire Frame XYZ - Marco 2'
+            Width: =328.16
+            X: =198
+            Y: =99
+            ZIndex: =1
+
+        "TextInputCanvas1 As 'Entrada de texto'":
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =2
+            DisplayMode: =DisplayMode.Edit
+            Font: =Font.'Open Sans'
+            FontSize: =17
+            Height: =50
+            LayoutMinHeight: =32
+            LayoutMinWidth: =320
+            Placeholder: ="Correo Electronico"
+            Width: =320
+            X: =0
+            Y: =0
+            ZIndex: =2
+
+        "TextInputCanvas2 As 'Entrada de texto'":
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =2
+            DisplayMode: =DisplayMode.Edit
+            Font: =Font.'Open Sans'
+            FontSize: =17
+            Height: =50
+            LayoutMinHeight: =32
+            LayoutMinWidth: =320
+            Placeholder: ="Contraseña"
+            Type: ='TextInputCanvas.Type'.Password
+            Width: =320
+            X: =0
+            Y: =0
+            ZIndex: =3
+
+        ButtonCanvas4 As Botón:
+            DisplayMode: =DisplayMode.Edit
+            Height: =40
+            Icon: ="Person"
+            IconStyle: ='ButtonCanvas.IconStyle'.Filled
+            LayoutMinHeight: =32
+            LayoutMinWidth: =96
+            OnSelect: |-
+                =ClearCollect(
+                    UsuarioLogueado,
+                    LookUp(
+                        usuarios,
+                        CorreoElectronico = TextInputCanvas1.Value,
+                        clave = TextInputCanvas2.Value
+                    )
+                );
+                If(
+                    First(UsuarioLogueado).Value,
+                    Notify(
+                        "Bienvenido",
+                        NotificationType.Success,
+                        3000
+                    );
+                    Navigate(
+                        Inventario,
+                        ScreenTransition.CoverRight
+                    );Reset(TextInputCanvas1);Reset(TextInputCanvas2),
+                    Notify(
+                        "Usuario Incorrecto",
+                        NotificationType.Error,
+                        3000
+                    )
+                )
+            Text: ="Iniciar Sesion"
+            Width: =320
+            X: =0
+            Y: =0
+            ZIndex: =4
+
+        TextCanvas1 As Texto:
+            AlignInContainer: =AlignInContainer.Center
+            DisplayMode: =DisplayMode.Edit
+            Font: =Font.'Open Sans'
+            Height: =32
+            LayoutMinHeight: =32
+            LayoutMinWidth: =96
+            Text: ="Olvido su contraseña?"
+            Weight: ='TextCanvas.Weight'.Bold
+            Width: =320
+            X: =0
+            Y: =0
+            ZIndex: =5
+
+        ButtonCanvas1_1 As Botón:
+            Align: =Align.Center
+            Appearance: ='ButtonCanvas.Appearance'.Transparent
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Icon: ="Mail"
+            IconStyle: ='ButtonCanvas.IconStyle'.Filled
+            LayoutMinHeight: =32
+            LayoutMinWidth: =96
+            OnSelect: =Navigate(RecordarContraseña,ScreenTransition.Cover)
+            Text: ="Recibir correo"
+            Width: =320
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+        TextCanvas2 As Texto:
+            DisplayMode: =DisplayMode.Edit
+            Font: =Font.'Open Sans'
+            Height: =32
+            LayoutMinHeight: =32
+            LayoutMinWidth: =96
+            Text: ="No Tiene una cuenta?"
+            Weight: ='TextCanvas.Weight'.Bold
+            Width: =320
+            X: =0
+            Y: =0
+            ZIndex: =7
+
+        ButtonCanvas1 As Botón:
+            Align: =Align.Center
+            Appearance: ='ButtonCanvas.Appearance'.Transparent
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Icon: ="PeopleAdd"
+            IconStyle: ='ButtonCanvas.IconStyle'.Filled
+            LayoutMinHeight: =32
+            LayoutMinWidth: =96
+            OnSelect: =Navigate(CreacionUsuario,ScreenTransition.Cover)
+            Text: ="Crear ahora"
+            Width: =320
+            X: =0
+            Y: =0
+            ZIndex: =8
+

@@ -1,0 +1,283 @@
+CreacionUsuario As screen:
+    Fill: =Color.White
+    Height: =Max(App.Height, App.DesignHeight)
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+    Width: =Max(App.Width, App.DesignWidth)
+
+    Container1_1 As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =768
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =10
+        LayoutMode: =LayoutMode.Auto
+        PaddingLeft: =10
+        PaddingTop: =10
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =672
+        ZIndex: =1
+
+        ButtonCanvas3 As Botón:
+            Align: =Align.Justify
+            AlignInContainer: =AlignInContainer.Start
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Icon: ="ArrowLeft"
+            IconStyle: ='ButtonCanvas.IconStyle'.Filled
+            LayoutMinHeight: =32
+            LayoutMinWidth: =96
+            OnSelect: =Navigate(Login,ScreenTransition.CoverRight)
+            Text: ="Volver"
+            Width: =96
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        Image6_1 As image:
+            BorderColor: =App.Theme.Colors.Darker40
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =116
+            Image: ='Wire Frame XYZ - Marco 2'
+            Width: =328.16
+            X: =198
+            Y: =99
+            ZIndex: =2
+
+        Form1 As form.PowerApps_CoreControls_Form:
+            AlignInContainer: =AlignInContainer.Start
+            BorderColor: =App.Theme.Colors.Darker40
+            DataSource: =usuarios
+            DefaultMode: =FormMode.New
+            FillPortions: =0
+            Height: =250
+            LayoutMinHeight: =100
+            LayoutMinWidth: =400
+            NumberOfColumns: =1
+            UseFluentV9Cards: =true
+            Width: =672
+            ZIndex: =3
+
+            CorreoElectronico_DataCard1 As typedDataCard.fluentV9TextualEditCard:
+                BorderColor: =App.Theme.Colors.Darker40
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="CorreoElectronico"
+                Default: =ThisItem.CorreoElectronico
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@usuarios],DataSourceInfo.DisplayName,CorreoElectronico)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =70
+                MaxLength: =DataSourceInfo([@usuarios], DataSourceInfo.MaxLength, CorreoElectronico)
+                Required: =true
+                Update: =DataCardValue3.Value
+                Width: =672
+                X: =0
+                Y: =2
+                ZIndex: =1
+
+                DataCardKey3 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =22
+                    Text: ="Correo Electronico"
+                    Weight: ='TextCanvas.Weight'.Semibold
+                    Width: =Parent.Width - 48
+                    Wrap: =false
+                    X: =24
+                    Y: =10
+                    ZIndex: =1
+
+                "DataCardValue3 As 'Entrada de texto'":
+                    AccessibleLabel: =Parent.DisplayName
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =32
+                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                    Required: =Parent.Required
+                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                    Value: =Parent.Default
+                    Width: =Parent.Width - 48
+                    X: =24
+                    Y: =DataCardKey3.Y + DataCardKey3.Height + 4
+                    ZIndex: =2
+
+                ErrorMessage3 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: =Parent.Error
+                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =Parent.Width - 48
+                    Wrap: =true
+                    X: =24
+                    Y: =DataCardValue3.Y + DataCardValue3.Height
+                    ZIndex: =3
+
+                StarVisible3 As Texto:
+                    Align: ='TextCanvas.Align'.Center
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    X: =0
+                    Y: =DataCardKey3.Y
+                    ZIndex: =4
+
+            Título_DataCard1 As typedDataCard.fluentV9TextualEditCard:
+                BorderColor: =App.Theme.Colors.Darker40
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Title"
+                Default: =ThisItem.Title
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@usuarios],DataSourceInfo.DisplayName,Title)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =70
+                MaxLength: =DataSourceInfo([@usuarios], DataSourceInfo.MaxLength, Title)
+                Required: =true
+                Update: =DataCardValue1.Value
+                Width: =672
+                X: =0
+                Y: =0
+                ZIndex: =3
+
+                DataCardKey1 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =22
+                    Text: |-
+                        ="Nombre Completo
+                        "
+                    Weight: ='TextCanvas.Weight'.Semibold
+                    Width: =Parent.Width - 48
+                    Wrap: =false
+                    X: =24
+                    Y: =10
+                    ZIndex: =1
+
+                "DataCardValue1 As 'Entrada de texto'":
+                    AccessibleLabel: =Parent.DisplayName
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =32
+                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                    Required: =Parent.Required
+                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                    Value: =Parent.Default
+                    Width: =Parent.Width - 48
+                    X: =24
+                    Y: =DataCardKey1.Y + DataCardKey1.Height + 4
+                    ZIndex: =2
+
+                ErrorMessage1 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: =Parent.Error
+                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =Parent.Width - 48
+                    Wrap: =true
+                    X: =24
+                    Y: =DataCardValue1.Y + DataCardValue1.Height
+                    ZIndex: =3
+
+                StarVisible1 As Texto:
+                    Align: ='TextCanvas.Align'.Center
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    X: =0
+                    Y: =DataCardKey1.Y
+                    ZIndex: =4
+
+            clave_DataCard1 As typedDataCard.fluentV9TextualEditCard:
+                BorderColor: =App.Theme.Colors.Darker40
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="clave"
+                Default: =ThisItem.clave
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@usuarios],DataSourceInfo.DisplayName,clave)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =70
+                MaxLength: =DataSourceInfo([@usuarios], DataSourceInfo.MaxLength, clave)
+                Required: =true
+                Update: =DataCardValue2.Value
+                Width: =672
+                X: =0
+                Y: =1
+                ZIndex: =3
+
+                DataCardKey2 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =22
+                    Text: |-
+                        ="Contraseña
+                        "
+                    Weight: ='TextCanvas.Weight'.Semibold
+                    Width: =Parent.Width - 48
+                    Wrap: =false
+                    X: =24
+                    Y: =10
+                    ZIndex: =1
+
+                "DataCardValue2 As 'Entrada de texto'":
+                    AccessibleLabel: =Parent.DisplayName
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =32
+                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                    Required: =Parent.Required
+                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                    Value: =Parent.Default
+                    Width: =Parent.Width - 48
+                    X: =24
+                    Y: =DataCardKey2.Y + DataCardKey2.Height + 4
+                    ZIndex: =2
+
+                ErrorMessage2 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: =Parent.Error
+                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =Parent.Width - 48
+                    Wrap: =true
+                    X: =24
+                    Y: =DataCardValue2.Y + DataCardValue2.Height
+                    ZIndex: =3
+
+                StarVisible2 As Texto:
+                    Align: ='TextCanvas.Align'.Center
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =30
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    X: =0
+                    Y: =DataCardKey2.Y
+                    ZIndex: =4
+
+        ButtonCanvas2 As Botón:
+            DisplayMode: =DisplayMode.Edit
+            Height: =40
+            Icon: ="PeopleAdd"
+            IconStyle: ='ButtonCanvas.IconStyle'.Filled
+            LayoutMinHeight: =32
+            LayoutMinWidth: =96
+            OnSelect: |-
+                =SubmitForm(Form1);
+                If(IsBlank(Form1.Error),Navigate(Login,ScreenTransition.CoverRight);Notify("Usuario registrado correctamente",NotificationType.Success,4000));NewForm(Form1)
+            Text: ="Crear Ahora"
+            Width: =300
+            X: =0
+            Y: =0
+            ZIndex: =4
+
+    Image5_1 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =768
+        Image: ='Wire Frame XYZ'
+        ImagePosition: =ImagePosition.Fill
+        Width: =692
+        X: =674
+        ZIndex: =2
+
